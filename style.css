@@ -20,6 +20,7 @@ h1, h3 {
 
 h1 {
   padding: 50px 0;
+  margin-top: 0;
   color: #f76c6c;
   font-family: "Simplifica";
   font-weight: bold;
