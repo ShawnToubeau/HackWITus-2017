@@ -29,6 +29,10 @@ h3 {
   padding-bottom: 5px;
 }
 
+p, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .heading {
   margin-top: 0;
   margin-bottom: 0;
