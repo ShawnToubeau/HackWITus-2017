@@ -76,25 +76,110 @@ p, h3 {
 #mlh-trust-badge {
   width: 6%;
   position: absolute;
-  left: 5%;
+  right: 5%;
 }
 
 #logo {
-  width: 50%;
+  width: 20%;
   padding-top: 20px;
+  position: absolute;
+  left: 3%;
+}
+
+#header-content {
+  position: relative;
 }
 
 .header-text {
-  padding: 20px 0;
-  font-size: 2.5rem;
+  padding: 20rem 0 10px;
+/*   font-size: 2.5rem; */
+  font-size: 4rem;
+  height: 100vh;
 }
 
 #applyBtn {
-  width: 25rem;
+/*   width: 20rem;  */
+  width: 18%;
+/*   height: 6rem; */
   height: 8rem;
   border-radius: 50px;
   background-color: #f76c6c;
   border: black;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.page-scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events:none;
+}
+
+.page-scroll .btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+a.btn.btn-circle {
+  padding: 0;
+}
+
+.btn-circle {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: background .4s ease-in-out;
+  -moz-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
 }
 
 /* END HEADER */
@@ -111,11 +196,11 @@ p, h3 {
 
 .about-sec {
   background-color: white;
-  height: 35rem;
+  height: 30rem;
   border: solid 5px #dedede;
-  display: flex;
+  padding-top: 25px;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .about-header {
@@ -291,11 +376,25 @@ img.team-img {
 
 @media screen and (max-width: 768px) {
   #logo {
-    padding-top: 120px;
+    padding-top: 110px;
+    left: 0;
+  right: 0;
+  margin: auto;
+    width: 70%;
+  }
+
+  #applyBtn {
+    width: 20rem;
+    height: 6rem;
   }
 
   #mlh-trust-badge {
-    width: 80px;
+    width: 60px;
+  }
+
+  .header-text {
+    padding: 70% 5% 0 5%;
+    font-size: 2.5rem;
   }
 
   .about-container, iframe, table, .panel-group {
