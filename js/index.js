@@ -1,6 +1,8 @@
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
+//TODO: PLEASE DOCUMENT FUNCTIONS :)
+
 $("#my-slider").sliderPro({
   width: "100%",
   height: $(".header").height(),
