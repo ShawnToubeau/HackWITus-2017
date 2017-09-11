@@ -42,6 +42,7 @@ window.onclick = function(event) {
 $(window).on('scroll', function() {
  if ($(window).scrollTop() > anchor_offset ) {
    $('#navbar').css("display", "block");
+      $('#navbar').css("color", "white");
   console.log('Passed');
  } else {
    $('#navbar').css("display", "none");
