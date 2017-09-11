@@ -126,7 +126,6 @@ p, h3 {
   border: black;
   float: right;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
