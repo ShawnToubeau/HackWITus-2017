@@ -54,6 +54,11 @@ p, h3 {
   padding-bottom: 25px;
 }
 
+#navbar {
+  background-color: white;
+  color: black;
+}
+
 /* ------------- */
 
 .wrapper {
