@@ -125,8 +125,13 @@ p, h3 {
   background-color: #f76c6c;
   border: black;
   float: right;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-fluid {
+  position: relative;
 }
 
 .page-scroll {
