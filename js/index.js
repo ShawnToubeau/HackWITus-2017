@@ -17,6 +17,8 @@ $("#my-slider").sliderPro({
 
 //WHEN READY CUE SLIDESHOW AND PARRALAX
 jQuery(document).ready(function($) {
+  $("navbar").hide();
+  
   $("#my-slider").sliderPro();
 
   $(window).stellar();
@@ -41,10 +43,9 @@ window.onclick = function(event) {
 
 $(window).on('scroll', function() {
  if ($(window).scrollTop() > anchor_offset ) {
-   $('#navbar').css("display", "block");
-      $('#navbar').css("color", "white");
+   $('#navbar').show(400);
   console.log('Passed');
  } else {
-   $('#navbar').css("display", "none");
+   $('#navbar').hide(400);
  }
 });
