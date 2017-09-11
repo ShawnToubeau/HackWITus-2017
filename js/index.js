@@ -45,4 +45,5 @@ $(window).on('scroll', function() {
   console.log('Passed');
  } else {
    $('#navbar').css("display", "none");
+ }
 });
