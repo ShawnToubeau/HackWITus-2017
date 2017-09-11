@@ -44,7 +44,6 @@ window.onclick = function(event) {
 $(window).on('scroll', function() {
  if ($(window).scrollTop() > anchor_offset ) {
    $('#navbar').show(400);
-  console.log('Passed');
  } else {
    $('#navbar').hide(400);
  }
