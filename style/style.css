@@ -119,18 +119,15 @@ p, h3 {
 }
 
 #applyBtn-navbar {
-/*   width: 20rem;  */
-  width: 18rem;
-/*   height: 6rem; */
-  height: 6rem;
+  width: 12rem;
+  height: 4rem;
   border-radius: 50px;
   background-color: #f76c6c;
   border: black;
-/*   position: absolute; */
-/*   bottom: 10%; */
-/*   left: 0; */
-/*   right: 0; */
-/*   margin: auto; */
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .page-scroll {
