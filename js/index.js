@@ -43,4 +43,4 @@ $(window).on('scroll', function() {
  if ($(window).scrollTop() > anchor_offset ) {
   console.log('Passed');
  }
-}
+});
