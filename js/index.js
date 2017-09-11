@@ -16,9 +16,7 @@ $("#my-slider").sliderPro({
 });
 
 //WHEN READY CUE SLIDESHOW AND PARRALAX
-jQuery(document).ready(function($) {
-  $("navbar").hide();
-  
+jQuery(document).ready(function($) {  
   $("#my-slider").sliderPro();
 
   $(window).stellar();
