@@ -58,6 +58,7 @@ p, h3 {
   background-color: white;
   color: black;
   display: none;
+  border-bottom: 1px solid lightgray;
 }
 
 /* ------------- */
@@ -124,9 +125,8 @@ p, h3 {
   border-radius: 50px;
   background-color: #f76c6c;
   border: black;
-/*   float: right; */
   position: absolute;
-  right: 5%;
+  right: 2%;
   top: 50%;
   transform: translateY(-50%);
 }
