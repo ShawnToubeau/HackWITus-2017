@@ -118,6 +118,21 @@ p, h3 {
   margin: auto;
 }
 
+#applyBtn-navbar {
+/*   width: 20rem;  */
+  width: 18rem;
+/*   height: 6rem; */
+  height: 6rem;
+  border-radius: 50px;
+  background-color: #f76c6c;
+  border: black;
+/*   position: absolute; */
+/*   bottom: 10%; */
+/*   left: 0; */
+/*   right: 0; */
+/*   margin: auto; */
+}
+
 .page-scroll {
   position: absolute;
   bottom: 0;
