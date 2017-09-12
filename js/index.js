@@ -39,11 +39,11 @@ window.onclick = function(event) {
   }
 };
 
-$(window).on('scroll', function() {
- if ($(window).scrollTop() > anchor_offset - 1) {
-   $('#wholeNavbar').show(400);
- } else {
-   $('#wholeNavbar').hide(400);
- }
-});
+// $(window).on('scroll', function() {
+//  if ($(window).scrollTop() > anchor_offset - 1) {
+//    $('#wholeNavbar').show(400);
+//  } else {
+//    $('#wholeNavbar').hide(400);
+//  }
+// });
 
