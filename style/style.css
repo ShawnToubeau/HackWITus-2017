@@ -46,7 +46,7 @@ p, h3 {
   background-color: white;
 }
 
-body, a, #applyBtn {
+.body, a, #applyBtn {
   font-size: 24px;
 }
 
