@@ -15,11 +15,11 @@ $("#my-slider").sliderPro({
   autoplayDelay: 10000
 });
 
-//WHEN READY CUE SLIDESHOW AND PARRALAX
-// jQuery(document).ready(function($) {  
-//   $("#my-slider").sliderPro();
+WHEN READY CUE SLIDESHOW AND PARRALAX
+jQuery(document).ready(function($) {  
+  $("#my-slider").sliderPro();
 
-//   $(window).stellar();
+  $(window).stellar();
   
   
 //    $('body').scrollspy({target: ".navbar", offset: 50});   
