@@ -46,3 +46,15 @@ $(window).on('scroll', function() {
    $('#navbar').hide(400);
  }
 });
+
+
+$('.navbar-collapse a').click(function () {
+  $('.navbar-collapse').collapse('hide')
+})
+
+$(document).click(function (e) {
+  if (!$(e.target).is('a') || $(e.target).is('.navbar-brand')) {
+    $('.collapse').collapse('hide')
+  }
+})
+
