@@ -45,7 +45,6 @@ jQuery(document).ready(function($) {
       });
     }  // End if
   });  
-});
 
 //OPENS THE MODAL TO DISPLAY SNAPCODE
 snapchat.onclick = function() {
