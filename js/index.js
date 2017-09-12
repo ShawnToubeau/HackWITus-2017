@@ -15,7 +15,7 @@ $("#my-slider").sliderPro({
   autoplayDelay: 10000
 });
 
-WHEN READY CUE SLIDESHOW AND PARRALAX
+// WHEN READY CUE SLIDESHOW AND PARRALAX
 jQuery(document).ready(function($) {  
   $("#my-slider").sliderPro();
 
