@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-// var anchor_offset = $('a[href="#test"]').offset().top;
+var anchor_offset = $('a[href="#about"]').offset().top;
 
 //MODIFIES IMAGE SLIDE SHOW
 $("#my-slider").sliderPro({
@@ -39,11 +39,11 @@ window.onclick = function(event) {
   }
 };
 
-// $(window).on('scroll', function() {
-//  if ($(window).scrollTop() > anchor_offset - 1) {
-//    $('#wholeNavbar').show(400);
-//  } else {
-//    $('#wholeNavbar').hide(400);
-//  }
-// });
+$(window).on('scroll', function() {
+ if ($(window).scrollTop() > anchor_offset - 1) {
+   $('#myNavbar').show(400);
+ } else {
+   $('#myNavbar').hide(400);
+ }
+});
 
