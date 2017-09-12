@@ -65,9 +65,9 @@ window.onclick = function(event) {
 
 $(window).on('scroll', function() {
  if ($(window).scrollTop() > anchor_offset - 1) {
-   $('#navbar').show(400);
+   $('#wholeNavbar').show(400);
  } else {
-   $('#navbar').hide(400);
+   $('#wholeNavbar').hide(400);
  }
 });
 
