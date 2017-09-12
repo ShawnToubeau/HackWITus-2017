@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-var anchor_offset = $('a[href="#test"]').offset().top;
+// var anchor_offset = $('a[href="#test"]').offset().top;
 
 //MODIFIES IMAGE SLIDE SHOW
 $("#my-slider").sliderPro({
