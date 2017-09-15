@@ -59,7 +59,7 @@ p, h3 {
 }
 
 #navbar {
-  background-color: white;
+/*   background-color: white; */
   color: black;
   display: none;
   border-bottom: 1px solid lightgray;
@@ -92,6 +92,7 @@ p, h3 {
 
 #logo {
   width: 20%;
+  min-width: 200px;
   padding-top: 20px;
   position: absolute;
   left: 3%;
@@ -99,40 +100,49 @@ p, h3 {
 
 #header-content {
   position: relative;
-}
-
-.header-text {
-  padding: 20rem 0 10px;
-/*   font-size: 2.5rem; */
-  font-size: 4rem;
   height: 100vh;
 }
 
-#applyBtn {
-/*   width: 20rem;  */
-  width: 18%;
-/*   height: 6rem; */
+.header-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  font-size: 4rem;
+}
+
+#applyBtn, #applyBtn-nav {
   height: 8rem;
   border-radius: 50px;
   background-color: #f76c6c;
+  color: white;
   border: black;
   position: absolute;
   bottom: 10%;
-  left: 0;
-  right: 0;
   margin: auto;
 }
 
-#applyBtn-navbar {
-  width: 12rem;
-  height: 4rem;
-  border-radius: 50px;
-  background-color: #f76c6c;
-  border: black;
+#applyBtn {
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  width: 18%;
+  min-width: 200px;
+  height: 8rem;
   position: absolute;
-  right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
+}
+
+#applyBtn-nav {
+  height: 4rem;
+  width: 12rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#navBtn {
+  position: absolute;
+  left: 90%;
+  transform: translate(-50%, 0);
 }
 
 .container-fluid {
@@ -398,24 +408,29 @@ img.team-img {
 
 @media screen and (max-width: 768px) {
   #logo {
+    width: 70%;
+    max-width: 430px;
     padding-top: 110px;
     left: 0;
-  right: 0;
-  margin: auto;
-    width: 70%;
-  }
-
+    right: 0;
+    margin: auto;
+    } 
+  
   #applyBtn {
     width: 20rem;
     height: 6rem;
   }
 
+  #navBtn {
+    left: 50%;
+  }
+  
   #mlh-trust-badge {
     width: 60px;
   }
 
   .header-text {
-    padding: 70% 5% 0 5%;
+    bottom: 25%;
     font-size: 2.5rem;
   }
 
