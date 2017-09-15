@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-var anchor_offset = $('a[href="#about"]').offset().top;
+// var anchor_offset = $('a[href="#about"]').offset().top;
 
 //MODIFIES IMAGE SLIDE SHOW
 $("#my-slider").sliderPro({
@@ -39,11 +39,16 @@ window.onclick = function(event) {
   }
 };
 
+// AUTO HIDES/SHOWS NAVBAR
 $(window).on('scroll', function() {
- if ($(window).scrollTop() > anchor_offset - 1) {
-   $('#myNavbar').show(400);
+ if ($(window).scrollTop() > $(".header").height()) {
+   $('#navbar').show(400);
  } else {
-   $('#myNavbar').hide(400);
+   $('#navbar').hide(400);
  }
 });
 
+//AUTO CLOSES NAVBAR ON ITEM CLICK
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
