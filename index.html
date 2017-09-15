@@ -13,21 +13,39 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
-  
+
 
 <div class="wrapper">
-  
-<!--   Navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top" id="myNavbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Home</a>
-    </div>
-  </div>
-</nav>
-  
-  <div class="header">
 
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+        </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>               
+      </button>
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" id="navBtn"><button id="applyBtn-nav">Apply Now</button></a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="header">
 
     <div class="slider-pro" id="my-slider" data-stellar-ratio="0">
       <div class="sp-slides">
@@ -69,7 +87,7 @@
     </div>
   </div>
 
-  <body class="body">    
+  <body class="body">
 
     <!--     START ABOUT -->
 
@@ -93,7 +111,8 @@
       </div>
       <h1 class="heading">When and Where?</h1>
       <p>Novemeber 18th-19th located in the <strong>Ira Allen Building, Parker Street, Boston, MA</strong></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.6488368990135!2d-71.09450594426335!3d42.33617649815149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a211bc4509f%3A0xdc4329c431caad5e!2sIra+Allen+Building%2C+Parker+St%2C+Boston%2C+MA+02120!5e0!3m2!1sen!2sus!4v1505071308705" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.6488368990135!2d-71.09450594426335!3d42.33617649815149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a211bc4509f%3A0xdc4329c431caad5e!2sIra+Allen+Building%2C+Parker+St%2C+Boston%2C+MA+02120!5e0!3m2!1sen!2sus!4v1505071308705"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <!--     END ABOUT -->
@@ -225,14 +244,14 @@
     </div>
 
     <!--     END FAQ -->
-<!--       START SPONSORS -->
+    <!--       START SPONSORS -->
 
     <div class="sponsors" id="sponsors">
       <h1 class="heading">Sponsors</h1>
       <h3 class="heading">[Insert Sponsors Here]</h3>
     </div>
 
-<!--       END SPONSORS -->
+    <!--       END SPONSORS -->
     <!--       TEAM SECTION -->
 
     <div class="team" id="team">
@@ -346,23 +365,25 @@
       <a href="https://www.instagram.com/hackwitus/" target="_blank">
         <i class="fa fa-instagram"></i>
       </a>
-        <i class="fa fa-snapchat" id="snapchat"></i>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Add us on Snap ;)</h2>
-            <img id="snapchat-img" src="https://dl.dropbox.com/s/udhkdo47eq7qmn9/snapchat-img.png">
-            <h4>hackwit.us</h4>
-              </div>
-          </div>
+      <i class="fa fa-snapchat" id="snapchat"></i>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add us on Snap ;)</h2>
+          <img id="snapchat-img" src="https://dl.dropbox.com/s/udhkdo47eq7qmn9/snapchat-img.png">
+          <h4>hackwit.us</h4>
+        </div>
+      </div>
     </div>
     <p style="margin: 0;">Coded with <i class="fa fa-coffee"></i> and <i class="fa fa-music"></i></p>
   </div>
 
 </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://dl.dropbox.com/s/5cal5lf0xlgh997/jquery.sliderPro.min.js"></script>
-  <script src="https://dl.dropbox.com/s/f205medv0hrarqp/jquery.stellar.js"></script>
-  <script src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://dl.dropbox.com/s/5cal5lf0xlgh997/jquery.sliderPro.min.js"></script>
+<script src="https://dl.dropbox.com/s/f205medv0hrarqp/jquery.stellar.js"></script>
+<script src="js/index.js"></script>
+
 </html>
