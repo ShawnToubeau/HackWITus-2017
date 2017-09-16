@@ -16,7 +16,7 @@
 
 <body>
   <h1>Application</h1>
-  <form>
+  <form id="applicationForm" action="success.html">
     Name: <input type="text" name="name" required /><br/>
     Birth Date: <input type="date" name="birthDate" required ><br/>
     Gender: <input type="text" name="gender"><br/>
@@ -26,17 +26,19 @@
     School: <input type="text" name="school" required ><br/>
 
     Shirt Size:
-    <input type="radio" name="shirtSize" value="s" > Small
-    <input type="radio" name="shirtSize" value="m"> Medium
-    <input type="radio" name="shirtSize" value="l" checked> Large <br/>
+    <input type="radio" name="shirtSize" value="xs" /> Extra Small
+    <input type="radio" name="shirtSize" value="s" /> Small
+    <input type="radio" name="shirtSize" value="m" /> Medium
+    <input type="radio" name="shirtSize" value="l" checked /> Large
+    <input type="radio" name="shirtSize" value="xl" /> Extra Large <br/>
 
     Resume:<br/>
-    URL: <input type="url" name="resumeLink" /> or
-    Upload Resume: <input type="file" name="resumeUpload" /><br/>
+    URL: <input id="resumeLink" type="url" name="resumeLink" />
+    <div id="fileUpload"> or Upload Resume: <input id="resumeFile" type="file" name="resumeUpload" /></div><br/>
 
     Dietary Restriction: <input type="text" name="dietaryRestriction"/><br/>
     Accommmodations: <input type="text" name="accommodations"/><br/>
-    Additional Comment: <input type="text" name="additionalComent"><br/>
+    Additional Comment: <input type="text" name="additionalComment"><br/>
 
     <input type="reset"/>
     <input type="submit"/>
@@ -49,5 +51,6 @@
 <script src="https://dl.dropbox.com/s/5cal5lf0xlgh997/jquery.sliderPro.min.js"></script>
 <script src="https://dl.dropbox.com/s/f205medv0hrarqp/jquery.stellar.js"></script>
 <script src="js/index.js"></script>
+<script src="js/apply.js"></script>
 
 </html>
