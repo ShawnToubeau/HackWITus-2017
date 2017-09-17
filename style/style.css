@@ -341,9 +341,14 @@ img.team-img {
 
 /* END TEAM SEC */
 
+#textarea {
+  width: 70%; 
+  height: 200px;
+  margin: 10px;
+}
+
 .footer {
   position: absolute;
-  bottom: 0;
   height: 100px;
   width: 100%;
   background-color: #efefef;
