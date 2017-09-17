@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
-  <title>HackWITus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HackWITus Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/apply.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slider-pro/1.3.0/css/slider-pro.min.css" />
@@ -15,33 +14,86 @@
 </head>
 
 <body>
-  <h1>Application</h1>
-  <form id="applicationForm" action="success.html">
-    Name: <input type="text" name="name" required /><br/>
-    Birth Date: <input type="date" name="birthDate" required ><br/>
-    Gender: <input type="text" name="gender"><br/>
+  <form>
+    <h1 id="header">HackWITus Registration</h1>
+    <div class="input">
+      <i class="fa fa-user"> </i>
+      <input type="text" name="name" placeholder="Name" required />
+      <p class="required">*</p>
+    </div>
 
-    Email: <input type="email" name="email" required /><br/>
-    Phone Number: <input type="tel" name="phoneNumber" required ><br/>
-    School: <input type="text" name="school" required ><br/>
+    <div class="input">
+      <i class="fa fa-envelope"> </i>
+      <input type="email" name="email" placeholder="Email">
+      <p class="required">*</p>
+    </div>
 
-    Shirt Size:
-    <input type="radio" name="shirtSize" value="xs" /> Extra Small
-    <input type="radio" name="shirtSize" value="s" /> Small
-    <input type="radio" name="shirtSize" value="m" /> Medium
-    <input type="radio" name="shirtSize" value="l" checked /> Large
-    <input type="radio" name="shirtSize" value="xl" /> Extra Large <br/>
+    <div class="compressedInput input">
+      <i class="fa fa-phone"> </i>
+      <input type="tel" name="phoneNumber" placeholder="123-456-7890">
+      <p class="required">*</p>
 
-    Resume:<br/>
-    URL: <input id="resumeLink" type="url" name="resumeLink" />
-    <div id="fileUpload"> or Upload Resume: <input id="resumeFile" type="file" name="resumeUpload" /></div><br/>
+      <i class="fa fa-birthday-cake"> </i>
+      <input type="date" name="birthDate" required>
+      <p class="required">*</p>
+    </div>
 
-    Dietary Restriction: <input type="text" name="dietaryRestriction"/><br/>
-    Accommmodations: <input type="text" name="accommodations"/><br/>
-    Additional Comment: <input type="text" name="additionalComment"><br/>
+    <div class="input">
+      <i class="fa fa-graduation-cap"> </i>
+      <input type="text" name="school" placeholder="School" required>
+      <p class="required">*</p>
+    </div>
 
-    <input type="reset"/>
-    <input type="submit"/>
+    <div class="resumeInput">
+      <p>Resume
+        <div style="display: flex; justify-content: center;">
+          <p>URL:</p> <input type="url" name="resumeLink" />
+        </div>
+        or
+        <div style="display: flex; justify-content: center; margin-left: 12.12%;">
+          <p style="min-width: 105px;">Upload Resume:</p> <input type="file" name="resumeUpload" />
+        </div>
+      </p>
+    </div>
+
+    <div class="input">
+      <p>Gender<br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+
+    <div class="input">
+      <p>Shirt Size<span class="required">*</span><br>
+        <input type="radio" name="shirtSize" value="s" required> Small
+        <input type="radio" name="shirtSize" value="m" required> Medium
+        <input type="radio" name="shirtSize" value="l" required> Large
+        <input type="radio" name="shirtSize" value="xl" required> XL Large
+      </p>
+    </div>
+
+    <div>
+      <p>Dietary Restriction<br>
+        <textarea name="dietaryRestriction" placeholder="ex. Vegan/Vegitarian"></textarea>
+      </p>
+    </div>
+
+    <div>
+      <p>Accomodations<br>
+        <textarea name="accommodations"></textarea>
+      </p>
+    </div>
+
+    <div>
+      <p>Additional Comments<br>
+        <textarea name="additionalComent"></textarea>
+      </p>
+    </div>
+
+    <input type="reset" />
+    <input type="submit" />
+
   </form>
 </body>
 
@@ -50,7 +102,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://dl.dropbox.com/s/5cal5lf0xlgh997/jquery.sliderPro.min.js"></script>
 <script src="https://dl.dropbox.com/s/f205medv0hrarqp/jquery.stellar.js"></script>
-<script src="js/index.js"></script>
 <script src="js/apply.js"></script>
 
 </html>
